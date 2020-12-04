@@ -30,7 +30,7 @@ jobs:
           file: ./docker/Dockerfile.contrib
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           push: true
-          tags: ghcr.io/larstobi/zwavejs2mqtt:dev
+          tags: ghcr.io/larstobi/zwavejs2mqtt:latest
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
