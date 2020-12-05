@@ -28,7 +28,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           file: ./docker/Dockerfile.contrib
-          platforms: linux/amd64
+          platforms: linux/arm64
           push: true
           tags: ghcr.io/larstobi/zwavejs2mqtt:latest
           build-args: |
